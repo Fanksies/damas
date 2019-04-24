@@ -1,5 +1,7 @@
 <template>
   <div class="hello">
+    <v-button onclick="location.reload(true)" style="all: unset; float:left; padding: .25em .7em;background: steelblue;color: white;border-radius: 2px;font-size: 1.5em;cursor:pointer;box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;">Nueva Partida</v-button>
+
     <!--<textarea name="" id="" cols="30" rows="10" v-model="board">
 
     </textarea>-->
@@ -18,7 +20,6 @@
       
     </table>
 
-    <button @click="getBoard">JUEGA</button>
   </div>
 </template>
 
@@ -169,7 +170,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+html {
+  background: #dbdbdb !important;
+}
+
+table {
+  padding: 1em;
+  background: white;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
 .hello{
+  margin:2em;
   height: 100%;
   width: 100%;
 }

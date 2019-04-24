@@ -24,6 +24,9 @@ export default {
   methods : {
     changeTablero (board) {
       this.filas = board;
+    }, 
+     reloadPage(){
+      window.location.reload()
     }
   }
 }
@@ -33,6 +36,7 @@ export default {
 html{
   height: 100%;
   width: 100%;
+  background:whitesmoke;
 }
 body{
   height: 100%;
